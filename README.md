@@ -1,0 +1,2 @@
+# gitTivity
+Git repository visualiser
