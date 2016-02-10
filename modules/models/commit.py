@@ -4,3 +4,4 @@ class Commit:
     committer = ""
     message = ""
     summary = ""
+    parents = []

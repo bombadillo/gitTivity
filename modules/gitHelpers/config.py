@@ -1,2 +1,2 @@
 class Config:
-    repoUrl = 'C:/github/falloutloottracker'
+    repoUrl = 'F:\\workspace\\git\\falloutloottracker'
