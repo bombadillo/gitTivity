@@ -7,5 +7,6 @@ def convertAll(commits):
         commitObj['committed_date'] = commit.committed_date
         commitObj['committer'] = commit.message
         commitObj['summary'] = commit.summary
+        commitObj['parents'] = commit.parents
         commitList.append(commitObj)
     return commitList

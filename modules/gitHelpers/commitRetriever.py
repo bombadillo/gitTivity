@@ -13,6 +13,7 @@ def getLogsForBranches(branches):
             commit.committer = commitItem.committer
             commit.message = commitItem.message
             commit.summary = commitItem.summary
+            commit.parents = commitItem.parents
             commitList.append(commit)
         branch.commits = commitList
     return branches
