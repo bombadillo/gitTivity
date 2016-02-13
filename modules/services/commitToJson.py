@@ -1,3 +1,5 @@
+
+import json
 def convertAll(commits):
     commitList = []
     for commit in commits:
@@ -7,6 +9,12 @@ def convertAll(commits):
         commitObj['committed_date'] = commit.committed_date
         commitObj['committer'] = commit.message
         commitObj['summary'] = commit.summary
-        commitObj['parents'] = commit.parents
+        commitObj['parents'] = convertParents(commit)
         commitList.append(commitObj)
     return commitList
+
+def convertParents(commit):
+    parents_list = []
+    for parent in commit.parents:
+        parents_list.append(str(parent))
+    return json.dumps(parents_list)
